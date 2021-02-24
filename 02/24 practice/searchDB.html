@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DB search</title>
+    </head>
+    <body>
+        <h2>데이터베이스 조회</h2>
+        <form action="result.php" method="post">
+            검색 조건 : 
+            <select name="type">
+                <option value="name">이름</option>
+                <option value="age">나이</option>
+            </select>
+            <input type="text" name="data" placeholder="검색값을 1글자 이상 입력하세요.">
+            <input type="submit" value="search">
+            
+        </form>
+        <a href="searchAll.php">모든 데이터 보기</a>
+    </body>
+</html>
