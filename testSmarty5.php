@@ -1,0 +1,20 @@
+<?php
+    require("smartyDefault.php");
+
+    $smarty=smartyDefault();
+    $smarty->assign("FirstName",array("길동","길서","길남"));
+    $smarty->assign("LastName",array("김","이","박"));
+    $smarty->assign("ContactNames",
+        array(
+            array("office","home","hp"),
+            array("office","home"),
+            array("office",'home","fax'),
+        ));
+    $smarty->assign("ContactsVals",
+    array(
+        array("111-1212","123-1234","010-8020-2313"),
+        array("111-2312","123-1332"),
+        array("111-5123","123-7193","0394-2341")
+    ));
+    $smarty->display("testTemplate6.tpl");
+?>

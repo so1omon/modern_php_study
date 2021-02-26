@@ -7,9 +7,9 @@
             "previewLimit": 50,
             "server": "localhost",
             "port": 3306,
-            "driver": "MariaDB",
+            "driver": "MySQL",
             "name": "mysql",
-            "database": "sample",
+            "database": "memberdb",
             "username": "root",
             "password": "1234"
         }
